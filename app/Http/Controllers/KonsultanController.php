@@ -36,11 +36,13 @@ class KonsultanController extends Controller
      */
     public function store(Request $request)
     {
-        $konsultan = implode('|', $request->input('konsultan_servis'));
-        $store = new konsultan;
-        $store->konsultan_servis = $konsultan;
+        $konsultan = $request->input('konsultan_servis');
+        foreach ($konsultan as $key => $value) {
+            $store = new konsultan;
+            $store->konsultan_servis = $konsultan[$key];
 
-        $store->save();
+            $store->save();
+        }
         return redirect()->route('konsultan')->with('success', 'Konsultan berhasil disimpan');
     }
 

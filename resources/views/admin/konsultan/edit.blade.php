@@ -40,7 +40,7 @@
                 </div>            
                 
                 <button type="submit" class="btn btn-primary">Submit</button>
-                <a href="{{url('sejarah')}}" class="btn btn-warning">back</a>
+                <a href="{{url('konsultan')}}" class="btn btn-warning">back</a>
             </form>
         </div>
 

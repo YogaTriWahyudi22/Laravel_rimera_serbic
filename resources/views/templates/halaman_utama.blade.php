@@ -48,9 +48,8 @@
         <div class="container d-flex align-items-center justify-content-between">
 
             <div class="logo">
-                <h1 class="text-white"><a href="index.html"></a> RIMERA SERBIC</h1>
-                <!-- Uncomment below if you prefer to use an image logo -->
-                <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+                
+                <h4 class="text-white mt-3"><img src="{{asset('gambar/logo1.png')}}" width="80px"> RIMERA SERBIC</h4>
             </div>
 
             <nav id="navbar" class="navbar">
@@ -63,23 +62,6 @@
                     <li><a class="nav-link scrollto " href="#testimonials">Profil Trainer</a></li>
                     {{-- <li><a class="nav-link scrollto" href="#pricing">Portofolio</a></li> --}}
                     <li><a class="nav-link scrollto" href="#team">Partner Kami</a></li>
-                    {{-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-                        <ul>
-                            <li><a href="#">Drop Down 1</a></li>
-                            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                                <ul>
-                                    <li><a href="#">Deep Drop Down 1</a></li>
-                                    <li><a href="#">Deep Drop Down 2</a></li>
-                                    <li><a href="#">Deep Drop Down 3</a></li>
-                                    <li><a href="#">Deep Drop Down 4</a></li>
-                                    <li><a href="#">Deep Drop Down 5</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Drop Down 2</a></li>
-                            <li><a href="#">Drop Down 3</a></li>
-                            <li><a href="#">Drop Down 4</a></li>
-                        </ul>
-                    </li> --}}
                     <li><a class="nav-link scrollto" href="#contact">Kontak Kami</a></li>
                     <li><a class="nav-link scrollto" href={{route('login')}}>Login</a></li>
                     
@@ -91,55 +73,47 @@
     </header><!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+    <section id="hero"  class="d-flex flex-column justify-content-end align-items-center" style="position: relative; background: linear-gradient(0deg, #073df0 0%, #073df0 0%);">
+        <img src="{{'gambar/gambar5.png'}}" style="position: absolute;">
         <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
 
             <!-- Slide 1 -->
             <div class="carousel-item active">
                 <div class="carousel-container">
                     <div class="row">
-                        <!-- <div class="col-sm-7"> -->
-                            <center>
-                                <img src="{{ asset('gambar/logo1.png') }}" style="width: 250px;" alt="" srcset="" class="animate__animated animate__fadeInUp"><br>
-                                <h2 class="animate__animated animate__fadeInRight">
-                                    Lembaga Syariah Economic Research and Bussiness Consulting
+                                <h2 class="animate__animated animate__fadeInRight" style="text-align: left; display: inline-block;">
+                                    Lembaga Syariah Economic Research <br>and Bussiness Consulting
                                 </h2>
-                            {{-- <p class="animate__animated animate__fadeInRight">Jasa pembuatan website dan toko online dengan tampilan design web yang menarik, handal, dan banyak fitur. Cocok untuk company profile, online shop, personal website, e-commerce, microsite, website portal, dll.</p> --}}
-                            </center>
-                        <!-- </div> -->
-                        <!-- <div class="col-sm-5">
-              <img class="animate__animated animate__fadeInRight" src="assets/img/design-web.png" width="100%" alt="" srcset="">
-            </div> -->
                     </div>
-                    <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto" style="background: #ef6603;">Read More</a>
+                        <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto" style="background: #ef6603; text-align: left;">Read More</a>
                 </div>
             </div>
 
             <!-- Slide 2 -->
             <div class="carousel-item">
                 <div class="carousel-container">
-                    <center>
-                        <img src="{{ asset('gambar/logo1.png') }}" style="width: 250px;" alt="" srcset="" class="animate__animated animate__fadeInUp"><br>
-                        <h2 class="animate__animated animate__fadeInRight">
-                            syariah economic research and business consulting
+                    
+                        {{-- <img src="{{ asset('gambar/logo1.png') }}" style="width: 250px;" alt="" srcset="" class="animate__animated animate__fadeInUp"> --}}
+                        <h2 class="animate__animated animate__fadeInRight" style="text-align: left">
+                            Lembaga Syariah Economic Research <br>and Bussiness Consulting
                         </h2>
                     {{-- <p class="animate__animated animate__fadeInRight">Jasa pembuatan website dan toko online dengan tampilan design web yang menarik, handal, dan banyak fitur. Cocok untuk company profile, online shop, personal website, e-commerce, microsite, website portal, dll.</p> --}}
-                    </center>
-                    <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto" style="background: #ef6603;">Read More</a>
+                    
+                    <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto" style="background: #ef6603; text-align: left;">Read More</a>
                 </div>
             </div>
 
             <!-- Slide 3 -->
             <div class="carousel-item">
                 <div class="carousel-container">
-                    <center>
-                        <img src="{{ asset('gambar/logo1.png') }}" style="width: 250px;" alt="" srcset="" class="animate__animated animate__fadeInUp"><br>
-                        <h2 class="animate__animated animate__fadeInRight">
-                            syariah economic research and business consulting
+                    
+                        {{-- <img src="{{ asset('gambar/logo1.png') }}" style="width: 250px;" alt="" srcset="" class="animate__animated animate__fadeInUp"> --}}
+                        <h2 class="animate__animated animate__fadeInRight" style="text-align: left">
+                            syariah economic research <br> and business consulting
                         </h2>
                     {{-- <p class="animate__animated animate__fadeInRight">Jasa pembuatan website dan toko online dengan tampilan design web yang menarik, handal, dan banyak fitur. Cocok untuk company profile, online shop, personal website, e-commerce, microsite, website portal, dll.</p> --}}
-                    </center>
-                    <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto" style="background: #ef6603;">Read More</a>
+                    
+                    <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto" style="background: #ef6603; text-align: left;">Read More</a>
                 </div>
             </div>
 
@@ -192,7 +166,7 @@
                         {{-- <a href="#" class="btn-learn-more">Learn More</a> --}}
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0">
-                        <img src="{{asset('gambar')}}/{{$sejarah->photo}}" alt="" srcset="">
+                        <img src="{{asset('gambar')}}/{{$sejarah->photo}}" class="img-fluid" srcset="">
                     </div>
                 </div>
                 @endforeach
@@ -219,8 +193,8 @@
                                     <img src="{{asset('gambar')}}/{{$so->photo}}" width="100%" alt="" srcset="">
                                 </p>
                                 {{-- <a href="#" class="btn-learn-more">Learn More</a> --}}
+                            </div>
                         @endforeach
-                        </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="row content" data-aos="fade-up">
@@ -267,7 +241,7 @@
 
         <!-- ======= Services Section ======= -->
         <section id="services" class="services" style="position:relative; background-color: rgb(253, 253, 234) ">
-            <img src="{{asset('logo/New.png')}}" alt="" style="position: absolute; width:400px; buttom:0; right: 11em; top: 7em;" >
+            <img src="{{asset('logo/New.png')}}" class="img-fluid" alt="" style="position: absolute; width:400px; buttom:0; right: 11em; top: 7em;" >
             <div class="container">
 
                 <div class="section-title" data-aos="zoom-out">
@@ -293,7 +267,7 @@
   
         <section id="services" class="services">
             <div class="container">
-                <img src="{{asset('logo/New.png')}}" alt="" style="position: absolute; width:400px; left: 0;" >
+                <img src="{{asset('logo/New.png')}}" class="img-fluid" alt="" style="position: absolute; width:400px; left: 0;" >
                 <div class="section-title" data-aos="zoom-out" style="text-align: right;">
                     <h2>Training</h2>
                     <p class="text-success">Training</p>
@@ -372,60 +346,6 @@
 
             </div>
         </section><!-- End Testimonials Section -->
-
-        <!-- ======= Pricing Section ======= -->
-        {{-- <section id="pricing" class="pricing" style="background-color: rgb(253, 253, 234);">
-
-            <div class="container">
-                <div class="section-title" data-aos="zoom-out">
-                    <h2>CV. Mediatama Web Indonesia</h2>
-                    <p>Portofolio</p>
-                </div>
-
-                <div class="row">
-                    <div class="col-sm-3"><img src="assets/img/port1.png" width="250px" alt="" srcset=""></div>
-                    <div class="col-sm-3"><img src="assets/img/port2.png" width="250px" alt="" srcset=""></div>
-                    <div class="col-sm-3"><img src="assets/img/port3.png" width="250px" alt="" srcset=""></div>
-                    <div class="col-sm-3"><img src="assets/img/port4.png" width="250px" alt="" srcset=""></div>
-                </div>
-
-                <div class="row mt-4">
-                    <div class="col-sm-12 mt-4">
-                        <center>
-                            <a href="#" class="btn btn-sm btn-success">View More Portofolio</a>
-                        </center>
-                    </div>
-                </div>
-                <hr>
-                <center>
-                    <h3>PORTOFOLIO APLIKASI MEDIATAMA WEB INDONESIA</h3>
-                    <div class="row">
-                        <div class="col-sm-4"><img src="assets/img/porto1.png" class="mt-2" width="350px" alt="" srcset=""></div>
-                        <div class="col-sm-4"><img src="assets/img/porto2.png" class="mt-2" width="350px" alt="" srcset=""></div>
-                        <div class="col-sm-4"><img src="assets/img/porto3.png" class="mt-2" width="350px" alt="" srcset=""></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4"><img src="assets/img/porto4.png" class="mt-2" width="350px" alt="" srcset=""></div>
-                        <div class="col-sm-4"><img src="assets/img/porto5.png" class="mt-2" width="350px" alt="" srcset=""></div>
-                        <div class="col-sm-4"><img src="assets/img/porto6.png" class="mt-2" width="350px" alt="" srcset=""></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4"><img src="assets/img/porto7.png" class="mt-2" width="350px" alt="" srcset=""></div>
-                        <div class="col-sm-4"><img src="assets/img/porto8.png" class="mt-2" width="350px" alt="" srcset=""></div>
-                        <div class="col-sm-4"><img src="assets/img/porto9.png" class="mt-2" width="350px" alt="" srcset=""></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4"><img src="assets/img/porto10.png" class="mt-2" width="350px" alt="" srcset=""></div>
-                        <div class="col-sm-4"><img src="assets/img/porto11.png" class="mt-2" width="350px" alt="" srcset=""></div>
-                    </div>
-                </center>
-
-            </div>
-
-
-
-        </section><!-- End Pricing Section --> --}}
-{{--  --}}
         <!-- ======= Team Section ======= -->
         <section id="team" class="team">
             <div class="container">
@@ -439,7 +359,8 @@
                     <div class="col-lg-2 col-md-3"></div>
                     @foreach ($tbl_partner as $partner)
                     <div class="col-lg-2 col-md-3">
-                        <img src="{{asset('gambar')}}/{{$partner->logo_instansi}}" data-aos="fade-up" width="150px" class="img-fluid" alt="">
+                        
+                        <img src="{{asset('gambar')}}/{{$partner->logo_instansi}}" id="gambar-partner"  data-aos="fade-up" width="150px" class="img-responsive" alt="">
                         {{-- <h3>{{$partner->nama_instansi}}</h3> --}}
                     </div>
                     @endforeach

@@ -358,10 +358,26 @@ h6 {
     width: 100%;
     overflow: hidden;
     position: relative;
-    background: linear-gradient(0deg, #c0e218 0%, #157daa 100%);
+            /* kuning terang */
+    /* background: linear-gradient(0deg, #d4f81e 0%, #d4f81e 0%); */
+            /* biru */
+    background: linear-gradient(0deg, #073df0 0%, #073df0 0%);
+    /* background-image: url('../../gambar/gambar4.png'); */
+    background-size: 100% 100%;
+            /* gradient cerah */
+    /* background: linear-gradient(0deg, #c0e218 0%, #157daa 100%); */
+            /* gradient gelap */
+    /* background: linear-gradient(0deg, #d4f81e 0%, #1a8fc2 100%); */
     padding: 0;
+    /* background-repeat: no-repeat; */
 }
 
+#gambar-partner
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 #hero .carousel-container {
     display: flex;
     justify-content: center;

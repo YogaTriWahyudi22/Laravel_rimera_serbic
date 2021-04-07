@@ -42,7 +42,7 @@ class SejarahController extends Controller
 
             $request->validate([
                 'sejarah' => 'required',
-                'photo' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+                'photo' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
             ]);
 
             $photo = $request->file('photo');
@@ -58,7 +58,6 @@ class SejarahController extends Controller
             $store->sejarah = $request->sejarah;
         }
         $store->save();
-        // $request->session()->flash('store', ' Sejarah Berhasil Ditambahkan');
         return redirect()->route('sejarah')->with('success', 'Sejarah berhasil disimpan');
     }
 
@@ -98,7 +97,7 @@ class SejarahController extends Controller
 
             $request->validate([
                 'sejarah' => 'required',
-                'photo' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+                'photo' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
             ]);
 
             $photo = $request->file('photo');
@@ -110,14 +109,12 @@ class SejarahController extends Controller
             $update->sejarah = $request->sejarah;
             $update->photo = $photo_name;
             $update->save();
-            // $request->session()->flash('update', 'Sejarah Berhasil diupdate');
             return redirect()->route('sejarah')->with('success', 'Sejarah Berhasil diupdate');
         } else {
             $update = sejarah::find($request->id_sejarah);
 
             $update->sejarah = $request->sejarah;
             $update->save();
-            // $request->session()->flash('update', 'Sejarah Berhasil diupdate');
             return redirect()->route('sejarah')->with('success', 'Sejarah Berhasil diupdate');
         }
     }
