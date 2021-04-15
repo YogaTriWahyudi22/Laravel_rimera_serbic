@@ -104,12 +104,18 @@ class ProfiltrainerController extends Controller
                 ]);
             return redirect()->route('profil')->with('success', 'Data berhasil di ubah');
         } else {
-            $filebaru = $request->file('foto_trainer_baru')->store('gambar');
-            Storage::delete($request->input('foto_trainer_lama'));
+            $request->validate([
+                'foto_trainer' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
+            ]);
+            // $filebaru = $request->file('foto_trainer_baru')->store('gambar');
+            $file = $request->file('foto_trainer');
+            $photo_name = time() . '.' . $file->extension();
+            $file->move(public_path('gambar'), $photo_name);
+            // Storage::delete($request->input('foto_trainer_lama'));
 
             DB::table('tbl_profil')->where('id', $id)
                 ->update([
-                    'foto_trainer'          => $filebaru,
+                    'foto_trainer'          => $photo_name,
                     'nama_trainer'          => $request->input('nama_trainer'),
                     'pendidikan'            => $pendidikan,
                     'pengalaman_kerja'      => $pengalaman_kerja,
